@@ -8,12 +8,12 @@
 //         var dbo = db.db("scratch");
 //         if (err) throw err;
 //         // console.log(dbo);
-        
+
 //         // dbo.collection("zips").findOne({}, function (err, result) {
 //         dbo.collection("zips").find({}, function (err, result) {            
 //             if (err) throw err;
 //             // console.log(result);
-            
+
 //             res.send(JSON.stringify(result))
 //             db.close();
 //         });
@@ -23,7 +23,7 @@
 // exports.insert = function (req, res) {
 //     MongoClient.connect(url, function(err, db){
 //         var dbo = db.db("scratch");
-        
+
 //         if(err) throw err;
 //         dbo.collection('zips').insertOne({
 //             item:'canvas',
@@ -35,5 +35,5 @@
 // }
 
 exports.test = function (req, res) {
-    console.log('test');
+    res.send("test success");
 }
