@@ -3,8 +3,8 @@ module.exports = function (app) {
   app.get('/getdemo', function (req, res) {
     res.send("data recieved");
   });
-  app.get('/test', inventory.test);
+  app.get('/allCustomers', inventory.getAllCustomer);
   // server.post('/insertData', inventory.insert);  
-  
-  
+
+
 };
