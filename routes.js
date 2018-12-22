@@ -4,7 +4,7 @@ module.exports = function (app) {
     res.send("data recieved");
   });
   app.get('/allCustomers', inventory.getAllCustomer);
-  // server.post('/insertData', inventory.insert);  
+  // server.post('/insertData', inventory.insert);
 
 
-};
+}
