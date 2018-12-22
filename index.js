@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongo = require("mongoose");
 var routes = require('./routes');
+var port = process.env.PORT || 8080;
 
 var cloud = true;
 var authenticate = '';
@@ -42,6 +43,6 @@ var db = mongo.connect(url, function (err, response) {
 routes(app);
 
 
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
+app.listen(port, function () {
+    console.log('Example app listening on port' + port)
 });
