@@ -6,4 +6,8 @@ module.exports = function (app) {
   // app.get('/allCustomers', inventory.getAllCustomer);
   // server.post('/insertData', inventory.insert);
   app.get("/api/getUser", inventory.getUser);
+  app.get("/api/getAllQuestion", inventory.getAllQuestion);  
+  app.post("/api/saveUser", inventory.saveUser);
+  app.post('/api/delete/:id', inventory.deleteUser);
+
 }
